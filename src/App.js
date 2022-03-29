@@ -12,7 +12,11 @@ function App() {
   }
 
   const reveal = () => {
-    fetchData()
+    try {
+      fetchData()
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
